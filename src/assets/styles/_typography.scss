@@ -1,0 +1,49 @@
+@import "@/assets/styles/colors";
+
+@mixin font-jumbo {
+  color: white;
+  font-size: 12.5rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+@mixin font-title {
+  color: white;
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+@mixin font-large {
+  color: white;
+  font-size: 28px;
+}
+
+@mixin font-large-black {
+  @include font-large;
+
+  font-weight: 900;
+}
+
+@mixin font-large-light {
+  @include font-large;
+
+  font-weight: 300;
+}
+
+@mixin font-body {
+  color: $color-light-gray;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+@mixin font-input {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
