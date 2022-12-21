@@ -11,6 +11,7 @@ export default function LandingPage () {
       <img
         src={logo}
         alt=""
+        className={styles.logo}
       />
 
       <h1>Publish your podcasts <em>everywhere.</em></h1>
@@ -34,7 +35,10 @@ export default function LandingPage () {
           alt=""
         />
       </div>
-      <form onSubmit={() => console.log('No submit handler')}>
+      <form
+        onSubmit={() => console.log('No submit handler')}
+        style={{ zIndex: 2 }}
+      >
         <input
           type="email"
           placeholder="Email address"
