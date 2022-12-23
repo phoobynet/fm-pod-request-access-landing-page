@@ -1,0 +1,11 @@
+@import "@/assets/styles/colors";
+
+.button {
+  height: 2.875rem;
+  border-radius: 2rem;
+  background-color: $color-green;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}

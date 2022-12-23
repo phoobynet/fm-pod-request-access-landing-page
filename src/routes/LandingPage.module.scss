@@ -24,7 +24,7 @@
     mix-blend-mode: screen;
   }
 
-  img.logo {
+  .logo-container {
     padding-top: 3.2rem;
   }
 
@@ -69,41 +69,11 @@
 
   form {
     display: flex;
+    z-index: 2;
     flex-direction: column;
-    gap: 1rem;
     width: 100%;
     padding: 0 1.5rem;
-
-    input[type="email"] {
-      height: 46px;
-      padding: 0 2rem;
-      border: none;
-      border-radius: 2rem;
-      outline: none;
-      background-color: $color-dark-gray;
-      color: white;
-
-      &::placeholder {
-        opacity: 0.5;
-        color: white;
-        font-size: 14px;
-        font-weight: 700;
-      }
-
-      &:focus {
-        border: 1px solid $color-green;
-      }
-    }
-
-    button[type="submit"] {
-      height: 46px;
-      border-radius: 2rem;
-      background-color: $color-green;
-      font-size: 14px;
-      font-weight: 700;
-      text-align: center;
-      cursor: pointer;
-    }
+    gap: 1rem;
   }
 }
 
