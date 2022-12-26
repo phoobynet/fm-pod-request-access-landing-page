@@ -1,5 +1,13 @@
 @import "@/assets/styles/reset";
 
+:root {
+  --color-green: hsl(157deg 74% 62%);
+  --color-light-gray: hsl(225deg 40% 83%);
+  --color-gray: hsl(225deg 21% 45%);
+  --color-dark-gray: hsl(225deg 26% 23%);
+  --color-very-dark-gray: hsl(224deg 35% 11%);
+}
+
 body {
   font-family: Chivo, sans-serif;
 }
