@@ -7,6 +7,9 @@ import Input from '@/components/Input'
 import Button from '@/components/Button'
 import Logo from '@/components/Logo'
 import { useState } from 'react'
+import LandingPageHeading from '@/components/LandingPage/LandingPageHeading'
+import LandingPageAbout from '@/components/LandingPage/LandingPageAbout'
+import LandingPageProviders from '@/components/LandingPage/LandingPageProviders'
 
 export default function LandingPage () {
   const [email, setEmail] = useState<string>()
@@ -24,28 +27,13 @@ export default function LandingPage () {
         <Logo />
       </div>
 
-      <h1>Publish your podcasts <em>everywhere.</em></h1>
-      <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts,
-        Google Podcasts, Pocket Casts and more!</p>
-      <div className={styles.providers}>
-        <img
-          src={spotify}
-          alt=""
-        />
-        <img
-          src={applePodcast}
-          alt=""
-        />
-        <img
-          src={googlePodcasts}
-          alt=""
-        />
-        <img
-          src={pocketCasts}
-          alt=""
-        />
-      </div>
+      <LandingPageHeading>Publish your podcasts <em>everywhere.</em></LandingPageHeading>
+      <LandingPageAbout>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+        Apple Podcasts,
+        Google Podcasts, Pocket Casts and more!</LandingPageAbout>
+      <LandingPageProviders />
       <form
+        className={styles.requestAccessForm}
         onSubmit={onSubmit}
       >
         <Input
