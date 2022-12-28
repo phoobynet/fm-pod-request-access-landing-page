@@ -1,9 +1,7 @@
 import { ButtonHTMLAttributes } from 'react'
 import styles from './Button.module.scss'
 
-type Props = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'>
-
-export default function Button (props: Props) {
+export default function Button (props: Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'>) {
   return (
     <button {...props} className={styles.button}>Request Access</button>
   )
